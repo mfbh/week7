@@ -1,0 +1,32 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <h1> <a href="/">Home </a> &nbsp <a href="/listtask.html">List all task</a>&nbsp <a href="/deletetask.html">delete task</a></h1>
+        <form action ="/addNewDev" method="POST">
+            First Name
+            <input type="text" name="firstName">
+            <br>Last Name
+            <input type="text" name="lastName">
+            <br>Level 
+            <select name="level">
+                <option value="BEGINNER">Beginner</option>
+                <option value="EXPERT">Expert</option>
+             </select>
+            <h3>Address</h3>
+            State
+            <input type="text" name="state">
+            <br>Suburb
+            <input type="text" name="suburb">
+            <br>Street
+            <input type="text" name="street">
+            <br>unit
+            <input type="text" name="unit">
+
+            <br>
+            <br>
+            <button type="submit">submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+    <head>
+            <style> 
+                
+                    table,th,td {
+                        border: 1px solid black;
+                    }
+
+                    
+            </style>
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <h1> <a href="/">Home </a> &nbsp <a href='/newdev.html'>Add developer</a>&nbsp<a href="/newtask.html">Add new Task</a>&nbsp<a href="/listtask.html">list all task</a></h1>
+        <table>
+                <tr>
+                        <td>ID</td>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Level</td>
+                        <td>state</td>
+                        <td>suburb</td>
+                        <td>street</td>
+                        <td>unit</td>
+                </tr>
+                <%for (let i = 0 ; i< dev.length; i++){ %>
+                    <tr>
+                        <td>
+                            <%= dev[i]._id%>
+                        </td>
+                        <td>
+                            <%= dev[i].name.firstName%>
+                        </td>
+                        <td>
+                            <%= dev[i].name.LastName%>
+                        </td>
+                            
+                        <td>
+                            <%= dev[i].level%>
+                        </td>
+                        <td>
+                            <%= dev[i].address.state%>
+                        </td>
+                        <td>
+                            <%= dev[i].address.suburb%>
+                        </td>
+                        <td>
+                            <%= dev[i].address.street%>
+                        </td>
+                        <td>
+                            <%= dev[i].address.unit%>
+                       </td>
+
+                    </tr>
+                    <%} %>
+        </table>
+            
+            
+    </body>
+</html>
